@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*  HTML STYLES */
+/* FIRST PAGE */
+
+// .container {
+//     position: relative;
+//     width: 80%;
+//     height: 50vh;
+//     margin: auto;
+//     background-color: red;  
+    
+//     &>.box {
+//         position: absolute;
+//         top: 120px;
+//         &>label {
+//             font-size: 50px;
+//         }
+//         &>input {
+//             font-size: 40px;
+//         }
+//     }
+// }
+
+.container {
+    background-color: rgb(129, 155, 235);
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    border: 2px solid black;
+    &>.box {
+        margin: 20px auto;
+        width: 320px;
+
+        &>input {
+            font-size: inherit;
+            padding: 10px;
+
+            &[type="text"] {
+                display: block;  /* TO MAKE THE NAME FO9 EL INPUT */
+                margin-bottom: 25px;    /*  bech ya3mal espace mabinhom ezoz  */
+                width: 100%;   /* 100%  mel 320px */
+                border: 2px solid steelblue;
+            }
+
+            &[type="radio"] {
+                margin: 0 8px 25px 18px; 
+                &:checked + label {
+                    font-weight: bold;
+                    font-size: 50px;
+                } 
+            }
+
+            &[type="submit"] {
+                width: 344px; 
+                height: 45px;
+                border: none;
+                background-color: royalblue;
+                color: white;
+            }
+            
+        }
+    }
+}
+
+
