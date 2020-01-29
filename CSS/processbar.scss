@@ -1,0 +1,211 @@
+// Colours -----------------------------------------
+
+$green: rgb(27, 185, 27);
+$secondary: #ecf0f1;
+$background:  #444;
+$white: #fefefe;
+$gray: #456;
+
+//Fonts
+//maybe import nicer fonts
+
+// General -----------------------------------------
+
+body{
+    background-color: $background;
+    color: $secondary;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{ 
+  font-weight: lighter;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: $green;
+  animation: pulse 2s ease-in;
+  border-radius: 15px;
+  
+}
+
+// Radio-buttons------------------------------------
+/* .button{
+    display: none;
+} */
+
+.container{
+    width:100%;
+}
+
+// Progress Bar ------------------------------------
+
+.progressBar {
+    counter-reset: step;
+    // counter-increment: step step1;
+    margin-top: 75px;
+    padding: 0;
+
+    
+  li { 
+       list-style: none;
+       float: left;
+       width: 33.3333%;
+       position: relative;
+       text-align: center;
+       letter-spacing: 2px;
+       
+
+   // Step's circle in default state
+   &:before {
+        content: counter(step);
+        counter-increment: step;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border: 2px solid $secondary;
+        display: block;
+        text-align: center;
+        margin: 0 auto 10px auto;
+        border-radius: 50%;
+        background-color: $background;
+        letter-spacing: 0;    
+    }
+
+    // Step's progress bar in default state
+    &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        background-color: $secondary;
+        top: 25px;
+        left: -50%;
+        z-index: -1;
+        transition-property: width;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;  
+      
+    }
+    
+   // Hide the first step's progress bar before the li "Hello Handsome"
+
+    &:first-child:after {
+        content: none;
+    }
+   
+  }
+}
+
+// Each Step on the Progress Bar
+
+// Step's active states-------------------
+#r1:checked ~ .container >.progressBar > #step1{
+    &::before{
+        border: 4px solid $green;
+        animation: pulse 3s infinite;
+    }
+    
+    &.active, &.actions {
+        color: $green;
+        
+      }
+   }
+  
+    #r2:checked ~ .container >.progressBar > #step1 {
+        &::before{
+            border: 3px solid $green;
+            
+        }
+        
+        &.active, &.actions {
+            color: $green;
+            
+          }
+        
+        &.active, &.actions {
+            color: $green;
+         
+          }
+        }
+        #r2:checked ~ .container >.progressBar > #step2{
+    
+            &::after{
+               background-color: $green;
+               width: 100%;
+            }
+            &::before{
+                border: 4px solid $green;
+                animation: pulse 2s infinite;
+             }
+             .active, &.actions {
+                color: $green;
+                
+              }
+            
+           }
+           
+// Step's complete state----------------
+
+           #r3:checked ~ .container >.progressBar > #step1 {
+            &::before{
+                border: 3px solid $green;
+               
+            }
+            
+            &.active, &.actions {
+                color: $green;
+             
+              }
+        
+            }
+          
+            #r3:checked ~ .container >.progressBar > #step2{
+        
+                &::after{
+                   background-color: $green;
+                   width: 100%;
+                }
+                &::before{
+                    border: 3px solid $green;
+                    
+                 }
+                 .active, &.actions {
+                    color: $green;
+                 
+                  }
+                
+               }
+    
+           #r3:checked ~ .container >.progressBar > #step3{
+        
+                    &::after{
+                       background-color: $green;
+                        width: 100%;
+                    }
+                    &::before{
+                        border: 4px solid $green;
+                        animation: pulse 2s infinite;
+                        
+                     }
+                     .active, &.actions {
+                        color: $green;
+                     
+                      }
+                 }
+
+// Animations --------------------------------------
+  
+// Pulse animation for Step's circle in active state               
+
+@keyframes pulse {
+         0% {
+
+              box-shadow: 0 0 0 0 rgba(33, 221, 190, 0.4); 
+                   }
+         100% {
+
+                 box-shadow: 0 0 5px 30px  rgba(33,131,221, 0) ;
+               }
+         }
+             
+
