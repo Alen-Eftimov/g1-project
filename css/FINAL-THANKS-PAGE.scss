@@ -323,7 +323,7 @@ section {
     }
 }
 
-    /*ANIMATION FOR THE BACKGROUND */
+//     /*ANIMATION FOR THE BACKGROUND */
 @keyframes star-animate {
     0%,20%,40%,60%,80%,100%{
         opacity: 0;
@@ -333,7 +333,7 @@ section {
     }
 } 
  
-  /*ANIMATION FOR THE mESSAGE */
+//   /*ANIMATION FOR THE mESSAGE */
 @keyframes animate1 {
     from {
       width: 0;
@@ -342,4 +342,7 @@ section {
       width: 891px;
     }
 }
+
+
+
 

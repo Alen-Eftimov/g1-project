@@ -416,7 +416,6 @@ section .wrapper .card > .back > .div-7 > img {
   }
 }
 
-/*ANIMATION FOR THE BACKGROUND */
 @-webkit-keyframes star-animate {
   0%, 20%, 40%, 60%, 80%, 100% {
     opacity: 0;
@@ -425,6 +424,7 @@ section .wrapper .card > .back > .div-7 > img {
     opacity: 1;
   }
 }
+
 @keyframes star-animate {
   0%, 20%, 40%, 60%, 80%, 100% {
     opacity: 0;
@@ -434,7 +434,6 @@ section .wrapper .card > .back > .div-7 > img {
   }
 }
 
-/*ANIMATION FOR THE mESSAGE */
 @-webkit-keyframes animate1 {
   from {
     width: 0;
@@ -443,6 +442,7 @@ section .wrapper .card > .back > .div-7 > img {
     width: 891px;
   }
 }
+
 @keyframes animate1 {
   from {
     width: 0;
