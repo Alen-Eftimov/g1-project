@@ -109,9 +109,13 @@ section {
         
     }
     .card {
+        background-color: red;
     
         width: 100%;
         height: 480px;
+        cursor: pointer;
+        transition: transform .6s linear;
+        transform: perspective(600px) rotateY(180deg);
     
     &>.front {
         padding: 20px;
@@ -121,7 +125,7 @@ section {
         z-index: 1;
         overflow: hidden;
         backface-visibility: hidden;
-        // animation: animate 20s infinite;
+        animation: animate 20s infinite;
         transition: transform .6s linear;
         transform: perspective(600px) rotateY(0deg);
 
@@ -236,11 +240,12 @@ section {
         animation: animate 20s infinite;
         transition: transform .6s linear;
         transform: perspective(600px) rotateY(180deg);
-    display: none;
+        
+        
         
 
-        
 
+        
         &>.div-3{
             height: 25%;
             width: 25%;
@@ -357,15 +362,17 @@ section {
 
 
 .card:hover > .front {
-    transform: perspective(600px) rotateY(-180deg) !important;
+    transform: perspective(600px) rotateY(-180deg);
     // animation: animate 20s infinite;
-    
+    // display: none;
+
    
 }
 .card:hover > .back {
-    display: block !important;
-    transform: perspective(600px) rotateY(0deg)!important;
-    animation: animate 20s infinite;
+    transform: perspective(600px) rotateY(0deg);
+    // animation: animate 20s infinite;
+    
+ 
 }
 
 
@@ -378,14 +385,14 @@ section {
     }
 }
 
-@keyframes animate-image {
-    0% {
-        transform: rotate(360deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
+// @keyframes animate-image {
+//     0% {
+//         transform: rotate(360deg);
+//     }
+//     100% {
+//         transform: rotate(0deg);
+//     }
+// }
 
 @keyframes star-animate {
     0%,20%,40%,60%,80%,100%{
