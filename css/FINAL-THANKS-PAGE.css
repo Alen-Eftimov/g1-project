@@ -132,7 +132,7 @@ section .wrapper > .thanksMsg > p:nth-child(1) {
 }
 
 section .wrapper > .thanksMsg > p:nth-child(3) {
-  padding-left: 120px;
+  padding-left: 100px;
 }
 
 section .wrapper .card {
@@ -151,10 +151,10 @@ section .wrapper .card > .front {
           backface-visibility: hidden;
   -webkit-animation: animate 20s infinite;
           animation: animate 20s infinite;
-  -webkit-transition: -webkit-transform .6s linear;
-  transition: -webkit-transform .6s linear;
-  transition: transform .6s linear;
-  transition: transform .6s linear, -webkit-transform .6s linear;
+  -webkit-transition: -webkit-transform 10s linear;
+  transition: -webkit-transform 10s linear;
+  transition: transform 10s linear;
+  transition: transform 10s linear, -webkit-transform 10s linear;
   -webkit-transform: perspective(600px) rotateY(0deg);
           transform: perspective(600px) rotateY(0deg);
 }
@@ -449,6 +449,227 @@ section .wrapper .card > .back > .div-7 > img {
   }
   to {
     width: 891px;
+  }
+}
+
+/*MEDIA QUERY FOR THANKS PAGE*/
+@media only screen and (max-width: 770px) {
+  section {
+    height: 170vh;
+  }
+  section .wrapper {
+    width: 99vw;
+    margin-left: 1%;
+  }
+  section .wrapper .div-1 > img {
+    margin-top: 205px;
+    -webkit-animation: none 0s;
+            animation: none 0s;
+  }
+  section .wrapper .thanksMsg {
+    left: 210px;
+    top: 96vh;
+  }
+  section .wrapper .card > .front {
+    height: 170vh;
+    -webkit-animation: none 0s;
+            animation: none 0s;
+    -webkit-transition: none 0s;
+    transition: none 0s;
+  }
+  section .wrapper .card > .front .div-3 {
+    margin-left: 270px;
+  }
+  section .wrapper .card > .front .div-3 img {
+    -webkit-animation: none 0s;
+            animation: none 0s;
+  }
+  section .wrapper .card > .front .div-4 {
+    margin-top: -137px;
+  }
+  section .wrapper .card > .front .div-4 img {
+    -webkit-animation: none 0s;
+            animation: none 0s;
+  }
+  section .wrapper .card > .front .div-5 {
+    margin-top: -137px;
+  }
+  section .wrapper .card > .front .div-5 img {
+    -webkit-animation: none 0s;
+            animation: none 0s;
+  }
+  section .wrapper .card > .front .div-6 {
+    margin-top: -94px;
+    margin-left: 20%;
+  }
+  section .wrapper .card > .front .div-6 img {
+    -webkit-animation: none 0s;
+            animation: none 0s;
+  }
+  section .wrapper .card > .front .div-7 {
+    margin-top: -94px;
+    margin-left: 80px;
+  }
+  section .wrapper .card > .front .div-7 img {
+    -webkit-animation: none 0s;
+            animation: none 0s;
+  }
+  section .wrapper .back {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  section {
+    height: 225vh;
+    width: 100%;
+  }
+  section .wrapper {
+    width: 100vw;
+    height: 107vh;
+    margin-left: 0;
+  }
+  section .wrapper .div-1 > img {
+    margin-top: 0;
+    margin-left: 10px;
+    -webkit-animation: none 0s;
+            animation: none 0s;
+  }
+  section .wrapper .thanksMsg {
+    left: 23%;
+    top: 0vh;
+    font-size: 2.5em;
+  }
+  section .wrapper .card > .front {
+    height: 170vh;
+    -webkit-animation: none 0s;
+            animation: none 0s;
+    -webkit-transition: none 0s;
+    transition: none 0s;
+  }
+  section .wrapper .card > .front .div-3 {
+    margin-top: 250px;
+    margin-left: 26%;
+  }
+  section .wrapper .card > .front .div-3 img {
+    -webkit-animation: none 0s;
+            animation: none 0s;
+  }
+  section .wrapper .card > .front .div-4 {
+    margin-top: -200vh;
+    margin-left: 26%;
+    float: none;
+  }
+  section .wrapper .card > .front .div-4 img {
+    -webkit-animation: none 0s;
+            animation: none 0s;
+  }
+  section .wrapper .card > .front .div-5 {
+    margin-top: 25px;
+    margin-left: 26%;
+    float: none;
+  }
+  section .wrapper .card > .front .div-5 img {
+    -webkit-animation: none 0s;
+            animation: none 0s;
+  }
+  section .wrapper .card > .front .div-6 {
+    margin-top: 25px;
+    margin-left: 26%;
+    float: none;
+  }
+  section .wrapper .card > .front .div-6 img {
+    -webkit-animation: none 0s;
+            animation: none 0s;
+  }
+  section .wrapper .card > .front .div-7 {
+    margin-top: 25px;
+    margin-left: 26%;
+    float: none;
+  }
+  section .wrapper .card > .front .div-7 img {
+    -webkit-animation: none 0s;
+            animation: none 0s;
+  }
+  section .wrapper .back {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  section {
+    height: 200vh;
+    width: 100%;
+  }
+  section .wrapper {
+    width: 100vw;
+    height: 107vh;
+    margin-left: 0;
+  }
+  section .wrapper .div-1 > img {
+    margin-top: 0;
+    margin-left: 12%;
+    -webkit-animation: none  0s;
+            animation: none  0s;
+  }
+  section .wrapper .thanksMsg {
+    left: 23%;
+    top: 0vh;
+    font-size: 2.5em;
+  }
+  section .wrapper .card > .front {
+    height: 170vh;
+    -webkit-animation: none  0s;
+            animation: none  0s;
+    -webkit-transition: none 0s;
+    transition: none 0s;
+  }
+  section .wrapper .card > .front .div-3 {
+    margin-top: 250px;
+    margin-left: 28%;
+  }
+  section .wrapper .card > .front .div-3 img {
+    -webkit-animation: none 0s;
+            animation: none 0s;
+  }
+  section .wrapper .card > .front .div-4 {
+    margin-top: -200vh;
+    margin-left: 28%;
+    float: none;
+  }
+  section .wrapper .card > .front .div-4 img {
+    -webkit-animation: none 0s;
+            animation: none 0s;
+  }
+  section .wrapper .card > .front .div-5 {
+    margin-top: 25px;
+    margin-left: 28%;
+    float: none;
+  }
+  section .wrapper .card > .front .div-5 img {
+    -webkit-animation: none 0s;
+            animation: none 0s;
+  }
+  section .wrapper .card > .front .div-6 {
+    margin-top: 25px;
+    margin-left: 28%;
+    float: none;
+  }
+  section .wrapper .card > .front .div-6 img {
+    -webkit-animation: none 0s;
+            animation: none 0s;
+  }
+  section .wrapper .card > .front .div-7 {
+    margin-top: 25px;
+    margin-left: 28%;
+    float: none;
+  }
+  section .wrapper .card > .front .div-7 img {
+    -webkit-animation: none 0s;
+            animation: none 0s;
+  }
+  section .wrapper .back {
+    display: none;
   }
 }
 /*# sourceMappingURL=FINAL-THANKS-PAGE.css.map */

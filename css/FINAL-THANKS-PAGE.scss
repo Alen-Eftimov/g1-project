@@ -101,7 +101,7 @@ section {
                 padding-left: 40px;
             }
             &>p:nth-child(3) {
-                padding-left: 120px;
+                padding-left: 100px;
             }
         }
         .card {
@@ -117,7 +117,7 @@ section {
                 overflow: hidden;
                 backface-visibility: hidden;
                 animation: animate 20s infinite;
-                transition: transform .6s linear;
+                transition: transform 10s linear;
                 transform: perspective(600px) rotateY(0deg);
 
                 &>.div-3{
@@ -333,7 +333,7 @@ section {
     }
 } 
  
-//   /*ANIMATION FOR THE mESSAGE */
+//   /*ANIMATION FOR THE MESSAGE */
 @keyframes animate1 {
     from {
       width: 0;
@@ -345,4 +345,227 @@ section {
 
 
 
+
+
+/*MEDIA QUERY FOR THANKS PAGE*/
+
+@media only screen and (max-width:770px) {
+    $image-width:150px;
+    $image-height: 25vh;
+    section {
+        height: 170vh;
+        .wrapper {
+            width: 99vw;
+            margin-left: 1%;
+
+            .div-1>img {
+                margin-top: 205px;
+                animation: none 0s ;
+            }
+            .thanksMsg {
+                left: 210px;
+                top: 96vh;
+            }
+            .card>.front{
+                height: 170vh;
+                animation: none 0s;
+                transition: none 0s ;
+                
+                .div-3 {
+                    margin-left: 270px;
+                    img {
+                        animation: none 0s ;
+                    }
+                    
+                }
+                
+                .div-4 {
+                    margin-top: -137px;
+                    img {
+                        animation: none 0s ;
+                    } 
+                }
+                .div-5 {
+                    margin-top: -137px;
+                    img {
+                        animation: none 0s ;
+                    } 
+                }
+                .div-6 {
+                    margin-top: -94px;
+                    margin-left: 20%;
+                    img {
+                        animation: none 0s ;
+                    } 
+                }
+                .div-7 {
+                    margin-top: -94px;
+                    margin-left: 80px;
+                    img {
+                        animation: none 0s;
+                    } 
+                }
+            }
+            .back {
+                display: none;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width:500px) {
+    $image-width:190px;
+    $image-height: 25vh;
+    
+    section {
+        height: 225vh;
+        width: 100%;
+        .wrapper {
+            width: 100vw;
+            height: 107vh;
+            margin-left: 0;
+
+            .div-1>img {
+                margin-top: 0;
+                margin-left: 10px;
+                animation: none 0s  ;
+                
+            }
+            .thanksMsg {
+                left: 23%;
+                top: 0vh;
+                font-size: 2.5em;
+            }
+            .card>.front{
+                height: 170vh;
+                animation: none 0s ;
+                transition: none 0s ;
+                .div-3 {
+                    margin-top: 250px;
+                    margin-left: 26%;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+                .div-4 {
+                    margin-top: -200vh;
+                    margin-left: 26%;
+                    float: none;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+                .div-5 {
+                    margin-top: 25px;
+                    margin-left: 26%;
+                    float: none;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+                .div-6 {
+                    margin-top: 25px;
+                    margin-left: 26%;
+                    float: none;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+                .div-7 {
+                    margin-top: 25px;
+                    margin-left: 26%;
+                    float: none;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+
+            }
+            .back {
+                display: none;
+            }
+        }
+
+
+    }
+
+}
+@media only screen and (max-width:360px) {
+    $image-width:190px;
+    $image-height: 32vh;
+    section {
+        height: 200vh;
+        width: 100%;
+        
+        .wrapper {
+            width: 100vw;
+            height: 107vh;
+            margin-left: 0;
+
+            .div-1>img {
+                margin-top: 0;
+                margin-left: 12%;
+                animation: none  0s ;
+
+            }
+            .thanksMsg {
+                left: 23%;
+                top: 0vh;
+                font-size: 2.5em;
+            }
+            .card>.front{
+                height: 170vh;
+                animation: none  0s ;
+                transition: none 0s ;
+                .div-3 {
+                    margin-top: 250px;
+                    margin-left: 28%;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+                .div-4 {
+                    margin-top: -200vh;
+                    margin-left: 28%;
+                    float: none;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+                .div-5 {
+                    margin-top: 25px;
+                    margin-left: 28%;
+                    float: none;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+                .div-6 {
+                    margin-top: 25px;
+                    margin-left: 28%;
+                    float: none;
+                    img {
+                        animation: none 0s;
+                    }
+                }
+                .div-7 {
+                    margin-top: 25px;
+                    margin-left: 28%;
+                    float: none;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+
+            }
+            .back {
+                display: none;
+            }
+        }
+
+
+    }
+
+}
 
