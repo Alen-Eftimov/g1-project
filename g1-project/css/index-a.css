@@ -1,20 +1,20 @@
-/* remove codrops styles and reset the whole thing */
 #container_demo{
    text-align: left;
-   margin: 0;
+ /*   margin: 0; */
    padding: 0;
    margin: 0 auto;
-   font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
+   font-family: Arial, Helvetica, sans-serif;
 }
 
-/** The wrapper that will contain our two forms **/
 #wrapper{
-   width: 60%;
+   width: 50%;
    right: 0px;
-   min-height: 560px;	
+ /*  min-height: 560px;	 */
    margin: 0px auto;	
-   width: 500px;
+   /* width: 500px; */
+  
    position: relative;
+   top: 160px;
 }
 /**** Styling the form elements **/
 
@@ -26,21 +26,21 @@
 
 #wrapper h1{
    font-size: 48px;
-   color: rgb(6, 106, 117);
+   color:rgba(238, 224, 224, 0.781);
    padding: 2px 0 10px 0;
-   font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+   font-family: Arial, Helvetica, sans-serif;
    font-weight: bold;
    text-align: center;
    padding-bottom: 30px;
 }
-/** For the moment only webkit supports the background-clip:text; */
+
 #wrapper h1{
    background: -webkit-repeating-linear-gradient(-45deg, 
-   rgb(18, 83, 93) , 
-   rgb(18, 83, 93) 20px, 
-   rgb(64, 111, 118) 20px, 
-   rgb(64, 111, 118) 40px, 
-   rgb(18, 83, 93) 40px);
+   rgb(188, 237, 245) , 
+   rgb(195, 237, 243) 20px, 
+   rgb(99, 185, 99) 20px, 
+   rgb(85, 187, 81) 40px, 
+   rgb(182, 228, 235) 40px);
    -webkit-text-fill-color: transparent;
    -webkit-background-clip: text;
 }
@@ -50,22 +50,24 @@
    width: 100%;
    height: 2px;
    margin-top: 10px;
-   background: -moz-linear-gradient(left, rgba(147,184,189,0) 0%, rgba(147,184,189,0.8) 20%, rgba(147,184,189,1) 53%, rgba(147,184,189,0.8) 79%, rgba(147,184,189,0) 100%); 
+   background: -moz-linear-gradient(left, rgba(5, 143, 0, 0.8) 20%, rgba(5, 143, 0, 0.8) 20%, rgba(5, 143, 0, 0.8) 20%, rgba(5, 143, 0, 0.8) 20%, rgba(5, 143, 0, 0.8) 100%); 
    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(147,184,189,0)), color-stop(20%,rgba(147,184,189,0.8)), color-stop(53%,rgba(147,184,189,1)), color-stop(79%,rgba(147,184,189,0.8)), color-stop(100%,rgba(147,184,189,0))); 
-   background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
-   background: -o-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
-   background: -ms-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
-   background: linear-gradient(left, rgba(246, 248, 248, 0) 0%,rgba(246, 248, 248,0.8) 20%,rgb(75, 143, 84,1) 53%,rgba(75, 143, 84, 0.8) 79%,rgba(246, 248, 248, 0) 100%); 
+   background: -webkit-linear-gradient(left, rgba(14, 197, 8, 0) 0%,rgba(5, 143, 0, 0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+   background: -o-linear-gradient(left, rgba(8, 238, 39, 0) 0%,rgba(5, 143, 0, 0.8) 20%,rgba(5, 143, 0, 0.8) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+   background: -ms-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(5, 143, 0, 0.8) 20%,rgba(5, 143, 0, 0.8) 53%,rgba(147,184,189,0.8) 79%,rgba(5, 143, 0, 0.8) 100%); 
+   background: linear-gradient(left, rgba(246, 248, 248, 0) 0%,rgba(5, 143, 0, 0.8) 20%,rgb(75, 143, 84,1) 53%,rgba(75, 143, 84, 0.8) 79%,rgba(5, 143, 0, 0.8) 100%); 
+
 }
 
 #wrapper p{
    margin-bottom:15px;
+   margin-left: 15px;
 }
 #wrapper p:first-child{
    margin: 0px;
 }
 #wrapper label{
-   color: rgb(64, 92, 96);
+   color: rgba(213, 231, 220, 0.918);
    position: relative;
 }
 
@@ -73,7 +75,7 @@
 /* placeholder */
 ::-webkit-input-placeholder  { 
    color: lightslategray; 
-   font-style: italic;
+   font-style: Arial, Helvetica, sans-serif;
 }
 input:-moz-placeholder,
 textarea:-moz-placeholder{ 
@@ -86,11 +88,12 @@ input {
 }
 
 /* all the input except submit and checkbox */
-#wrapper input:not([type="checkbox"]){
-   width: 92%;
+#wrapper input:not([type="checkbox"])
+{
+   width: 88%;
    margin-top: 4px;
-   padding: 10px 5px 10px 32px;	
-   border: 1px solid rgb(178, 178, 178);
+   padding: 10px 5px 10px 31px;	
+   border: 2px solid rgb(36, 196, 4);
    -webkit-appearance: textfield;
    -webkit-box-sizing: content-box;
      -moz-box-sizing : content-box;
@@ -118,7 +121,7 @@ input {
 /** the magic icon trick ! **/
 [data-icon]:after {
    content: attr(data-icon);
-   font-family: 'FontomasCustomRegular';
+   font-family: Arial, Helvetica, sans-serif;
    color: rgb(106, 159, 171);
    position: absolute;
    left: 10px;
@@ -150,22 +153,22 @@ input {
 p.change_link{
    position: absolute;
    color: rgb(127, 124, 124);
-   left: 0px;
+   right: 0px;
    height: 10px;
-   width: 440px;
+   /* width: 440px; */
    padding: 17px 30px 20px 30px;
    font-size: 16px	;
    text-align: right;
   }
 
-#wrapper p.change_link a {
+  #wrapper p.change_link a {
    display: inline-block;
    font-weight: bold;
    cursor: pointer;
-   background: limegreen;
+   background: rgb(4, 177, 4);
    padding: 8px 5px;
    /* padding: 2px 6px; */
-   color: white;
+   color: #604343;   
    margin-left: 10px;
    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
    text-decoration: none;
@@ -199,12 +202,12 @@ p.change_link{
    top: 1px;
 }
 
-/** Styling both forms **/
+/** Styling forms **/
 #register, 
 #login,
 #page3{
    position: absolute;
-   top: 0px;
+ /*   top: 0px; */
    width: 88%;	
    padding: 18px 6% 60px 6%;
    margin: 0 0 35px 0;
@@ -216,7 +219,7 @@ p.change_link{
    -webkit-box-shadow: 5px;
    -moz-border-radius: 5px;
         border-radius: 5px;
-   background-color: rgb(79, 139, 139) ;  
+   background-color: #4685c91e;    
            
 }
 
@@ -234,8 +237,11 @@ p.change_link{
 #page3{	
    position: absolute;
    z-index: 20;
-   opacity: 0;
-  
+   opacity: 0; 
+}
+
+#page4{
+   display: none;
 }
 
 #toregister:target ~ #wrapper #register,
@@ -252,19 +258,22 @@ p.change_link{
    -o-animation-delay: .1s;
    -ms-animation-delay: .1s;
    animation-delay: .1s;
-   opacity: 0;
-   
+   opacity: 0;  
 }
+
 #topage3:target ~ #wrapper #login,
 #topage3:target ~ #wrapper #register,
 #toregister:target ~ #wrapper #login,
 #tologin:target ~ #wrapper #page3{
-   -webkit-animation-name: fadeOutLeft;
-   -moz-animation-name: fadeOutLeft;
-   -ms-animation-name: fadeOutLeft;
-   -o-animation-name: fadeOutLeft;
-   animation-name: fadeOutLeft;
-   opacity: 0;
+      opacity: 0;
+}
+
+#topage4:target ~ #wrapper 
+{
+   display: none;
+}
+#topage4:target ~  #page4{
+   display: block;
 }
 
 /** the actual animation**/
@@ -312,3 +321,198 @@ p.change_link{
    height: 90px;
    background: transparent;
 }
+
+/* haroon */
+/* -------------------------------------------------------- */
+
+.hb{
+   position: absolute;
+   top: 143px;
+   left: 40px;
+}
+.hd{
+   position: absolute;
+   top: 215px;
+   left: 40px;
+   
+}
+#Country{
+   width: 95%;
+
+}
+.login .form input,select {
+   width: 100%;
+   height: 41px;
+   left: 0;
+   margin-top: 10px;
+   background: rgba(238, 224, 224, 0.781);
+   border: 2px solid rgb(36, 196, 4);
+   padding: 0 25px; 
+   color: rgba(44, 33, 33, 0.61);
+   font-size: 15px;
+   margin-left: 0;
+   /* width: 444px; */
+   
+ }
+ #haroon{
+   height: 70px;
+   
+    }
+
+
+  .firstname{
+     top: 45px;
+     left: -69px;
+  }
+  .lastname{
+   right: 103px;
+}
+
+.telephonenumber{
+   right: 135px;
+}
+
+.Descriptions{
+   position: relative;
+   top: 11px;
+   right: 85px;   
+}
+.username{
+   right: 103px;
+}
+.emailaddress{
+   right: 65px;
+}
+
+.keyconfirm{
+   right: 99px;
+}
+.confirm{
+   right:215px;
+   position: relative;
+   
+}
+
+.icon{
+   position: relative;
+   color: rgb(106, 159, 171);
+   top: 34px;
+   font-size: 18px;
+}
+.land{
+   position: relative;
+   color: rgb(106, 159, 171);
+   top: 43px;
+   font-size: 18px;
+   right: 85px;
+   margin-right: 31px;
+  
+}
+
+
+
+ .b1 {
+   height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/0.jpeg);
+   color: #ecf0f1;
+   background-size: cover;
+   font-family: Arial, Helvetica, sans-serif;
+   background-repeat: no-repeat;
+   margin:0;
+   padding:0;
+ 
+}
+ 
+ 
+ .wrap {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .button {
+   /* min-width: 300px; */
+   min-height: 60px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 22px;
+   text-transform: uppercase;
+   letter-spacing: 1.3px;
+   font-weight: 700;
+   color: #313133;
+   background: #4FD1C5;
+   background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+   border: none;
+   border-radius: 1000px;
+   box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+   transition: all 0.3s ease-in-out 0s;
+   cursor: pointer;
+   outline: none;
+   position: relative;
+   padding: 10px;
+   }
+ 
+ button::before {
+   content: '';
+   border-radius: 1000px;
+   /* min-width: calc(300px + 12px); */
+   min-height: calc(60px + 12px);
+   border: 6px solid #00FFCB;
+   box-shadow: 0 0 60px rgba(0,255,203,.64);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 0;
+   transition: all .3s ease-in-out 0s;
+ }
+ 
+ .button:hover, .button:focus {
+   color: #313133;
+   transform: translateY(-6px);
+ }
+ 
+ button:hover::before, button:focus::before {
+   opacity: 1;
+ }
+ 
+ button::after {
+   content: '';
+   width: 30px; height: 30px;
+   border-radius: 100%;
+   border: 6px solid #00FFCB;
+   position: absolute;
+   z-index: -1;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   animation: ring 1.5s infinite;
+ }
+ 
+ button:hover::after, button:focus::after {
+   animation: none;
+   display: none;
+ }
+ 
+ @keyframes ring {
+   0% {
+     width: 30px;
+     height: 30px;
+     opacity: 1;
+   }
+   100% {
+     /* width: 300px; */
+     height: 300px;
+     opacity: 0;
+   }
+ }
+ @media only screen  and (max-width : 680px){
+   #wrapper {
+      width: 98%;
+   }
+   body{
+      background-image: none;
+      background-color: rgb(79, 156, 187); 
+   }
+ }
