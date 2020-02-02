@@ -1,2 +1,2 @@
 # g1-module1-project
-HTML CSS SCSS Project Login Registrtion
+HTML CSS SCSS Project Login Registration
